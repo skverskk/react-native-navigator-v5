@@ -5,21 +5,21 @@ import { View, Text, StyleSheet } from 'react-native';
 const Stack = createStackNavigator();
 
 import HomeScreen from '../screens/HomeScreen';
-import WelcomeScreen from '../screens/WelcomeScreen';
+import SearchScreen from '../screens/SearchScreen';
 
 const MainStackNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='Search'>
         <Stack.Screen
           name='Home'
           component={HomeScreen}
           options={{ title: 'Home Screen' }}
         />
         <Stack.Screen
-          name='Welcome'
-          component={WelcomeScreen}
-          options={{ title: 'Welcome Screen' }}
+          name='Search'
+          component={SearchScreen}
+          options={{ title: 'Business Search', headerTitleAlign: 'center' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

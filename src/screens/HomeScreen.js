@@ -6,8 +6,8 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.viewStyle}>
       <Text style={styles.textStyle}>Hello from the Home Screen</Text>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Welcome')}>
-        <Text style={styles.textStyle}>Goto Welcome Screen</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+        <Text style={styles.textStyle}>Goto Search Screen</Text>
       </TouchableOpacity>
     </View>
   );
